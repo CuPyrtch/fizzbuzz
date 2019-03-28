@@ -44,3 +44,23 @@ Fizz
 Fizz
 Buzz
 """
+quantitystr = input("How many numbers shall we print? ")
+fizzstr = input("For what multiples shall we print 'Fizz'? ")
+buzzstr = input("For what multiples shall we print 'Buzz'? ")
+
+quantity = int(quantitystr)
+fizznum = int(fizzstr)
+buzznum = int(buzzstr)
+
+for i in range (1, quantity+1):
+    stri = ""
+    if i%fizznum == 0:
+        stri = stri + "Fizz"
+    if i%buzznum == 0:
+        stri = stri + "Buzz"
+    if stri != "Fizz":
+        if stri != "Buzz":
+            if stri != "FizzBuzz":
+                stri = str(i)
+    print(stri)
+    
