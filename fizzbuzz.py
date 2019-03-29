@@ -58,9 +58,7 @@ for i in range (1, quantity+1):
         stri = stri + "Fizz"
     if i%buzznum == 0:
         stri = stri + "Buzz"
-    if stri != "Fizz":
-        if stri != "Buzz":
-            if stri != "FizzBuzz":
-                stri = str(i)
+    if stri == "":
+        stri = str(i)
     print(stri)
     
