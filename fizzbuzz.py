@@ -45,8 +45,8 @@ Fizz
 Buzz
 """
 quantitystr = input("How many numbers shall we print? ")
-fizzstr = input("For what multiples shall we print 'Fizz'? ")
-buzzstr = input("For what multiples shall we print 'Buzz'? ")
+fizzstr = input("For multiples of what number shall we print 'Fizz'? ")
+buzzstr = input("For multiples of what number shall we print 'Buzz'? ")
 
 quantity = int(quantitystr)
 fizznum = int(fizzstr)
